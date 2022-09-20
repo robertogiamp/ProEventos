@@ -27,7 +27,7 @@ namespace ProEventos.API.Controllers
             return _context.Eventos;
         }
 
-        [HttpGet("{Id}")]
+        [HttpGet("{id}")]
         public Evento GetById(int id)
         {
             return _context.Eventos.FirstOrDefault(
